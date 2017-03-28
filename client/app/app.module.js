@@ -14,6 +14,7 @@ var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
 var questions_components_1 = require('./components/questions/questions.components');
+var newquestion_component_1 = require('./components/newQuestion/newquestion.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,6 +28,7 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 questions_components_1.QuestionsComponent,
+                newquestion_component_1.NewQuestionComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

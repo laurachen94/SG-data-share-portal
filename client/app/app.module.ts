@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { QuestionsComponent} from './components/questions/questions.components'
+import { NewQuestionComponent } from './components/newQuestion/newquestion.component'
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { QuestionsComponent} from './components/questions/questions.components'
   declarations: [
     AppComponent,
     QuestionsComponent,
+    NewQuestionComponent
   ],
   bootstrap: [ AppComponent ]
 })

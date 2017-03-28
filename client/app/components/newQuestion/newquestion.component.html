@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+  <div class="question-card" id="question-overview">
+    <div class="card-title-bar">
+      <div class="title-text">Question Overview</div>
+    </div>
+    <div class="new-question-info">
+      <div id="summary-area">
+        <div class="short-text-input">
+          <input class="input-box" type="text" name="question-title" placeholder="Enter the question title here" />
+        </div>
+        <div class="short-text-input">
+          <input class="input-box" type="text" name="question-brief" placeholder="Enter the brief intro of the question here" />
+        </div>
+        <div class="short-text-input">
+          <input class="input-box" type="text" name="question-prize" placeholder="Enter the prize here" />
+        </div>
+      </div>
+      <div id="options-area">
+        <div id="select-who-can-view">
+          <select class="selection-input" id="who-can-view">
+            <option style="background-image:url(./img/global.png);" selected>
+              Public viewed
+            </option>
+            <option style="background-image:url(./img/eye.png);">
+              Only by invitation
+            </option>
+          </select>
+        </div>
+        <div id="select-expiration-date">
+          <p class="selection-input" id="expiration-date">Set the expiration date</p>
+        </div>
+        <div id="select-category">
+          <select class="selection-input" id="category">
+            <option>Stocks</option>
+            <option>Options</option>
+            <option>Futures</option>
+            <option>Hedge Funds</option>
+          </select>
+        </div>
+      </div>
+      <div id="upload-area">
+        <div class="upload-info" id="upload-image">
+          <img src="./img/photo-camera.png" alt="./img/eye.png" width="50px" height="40px" />
+          <div class="upload-info-text">Upload the image for your question</div>
+        </div>
+        <div class="upload-info" id="upload-data">
+          <img src="./img/toCloud.png" alt="./img/eye.png" width="50px" height="40px" />
+          <div class="upload-info-text">Upload the dataset for your question</div>
+        </div>
+      </div>
+      <div class="save">
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+  <div class="question-card" id="question-description">
+    <div class="card-title-bar">
+      <div class="title-text">Question Details</div>
+    </div>
+    <div class="edit-bar">
+      <div class="edit-items">
+        Normal Text
+      </div>
+      <div class="edit-items">
+        Arial
+      </div>
+      <div class="edit-items">
+        11
+      </div>
+      <div class="edit-items">
+        B I U A
+      </div>
+      <div class="edit-items">
+        link ???
+      </div>
+      <div class="edit-items">
+        left center right justified
+      </div>
+      <div class="edit-items">
+        line height
+      </div>
+      <div class="edit-items">
+        number bullet indent-left indent-right
+      </div>
+      <div class="edit-items">
+        ???
+      </div>
+    </div>
+    <div class="text-area">
+      <textarea id="question-details"></textarea>
+    </div>
+    <div class="save">
+      <button class="save-btn">Save</button>
+    </div>
+  </div>
+</body>
+</html>

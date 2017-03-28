@@ -1,3 +1,6 @@
+/**
+ * Created by laurachen on 3/28/17.
+ */
 import {Component} from '@angular/core';
 import {QuestionService} from '../../service/questions/question.service';
 import { Question } from './questions'

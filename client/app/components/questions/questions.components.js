@@ -8,6 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by laurachen on 3/28/17.
+ */
 var core_1 = require('@angular/core');
 var question_service_1 = require('../../service/questions/question.service');
 var QuestionsComponent = (function () {

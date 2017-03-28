@@ -23,10 +23,5 @@ export class QuestionService {
         return this.http.delete('/api/question/'+id)
             .map(res => res.json());
     }
-    // getQuestionsSlowly(): Promise<Question[]> {
-    //     return new Promise(resolve => {
-    //         // Simulate server latency with 2 second delay
-    //         setTimeout(() => resolve(this.getQuestions()), 2000);
-    //     });
-    // }
+
 }
