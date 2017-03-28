@@ -1,0 +1,36 @@
+<div class="header">
+    <ul>
+        <li><img width="50px" height="50px" alt="placeholder" id="logo"></li>
+        <li><input type="text" class="inputBox"></li>
+        <li>QUESTIONS</li>
+        <li>DATASETS</li>
+        <li>KERNELS</li>
+        <li>DISCUSSION</li>
+    </ul>
+</div>
+
+<div class="questions">
+    <div class = "question" *ngFor="let question of questions">
+        <img class="questionImage" alt="placeholder">
+        <p class="questionName">{{question.Name}}</p>
+        <p class="questionDescription">{{question.Description}}</p>
+        <!--<div class="Team">
+            <span class="teamsJoined">{{question.teamsJoined}} teams joined</span>
+            <span class="teamsOpened">{{question.teamsOpened}} teams open</span>
+        </div>-->
+        <div class="User">
+            <span class="timeLeft">deadline: {{question.TimeLine}}</span>
+            <span class="requester">{{question.Requester}}</span>
+        </div>
+    </div>
+</div>
+
+<div class="create">
+    <div class="banner"><button></button>Create a question</div>
+    <div id="newquestion"><button></button>Start a new question</div>
+</div>
+
+<div class="myQuestions">
+    <div class="banner">My questions</div>
+    <div id="questionList">A list of questions here</div>
+</div>

@@ -1,0 +1,83 @@
+
+li{
+    display: inline;
+    list-style-type: none;
+    padding: 30px;
+}
+
+ul{
+    padding-left: 100px;
+}
+.header{
+    background-color: #333;
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+}
+
+.questions{
+    width: 60%;
+    padding-left: 50px;
+    padding-top: 80px;
+    float: left;
+}
+
+.question{
+    border-style: groove;
+    padding-bottom: 20px;
+}
+
+.questionImage{
+    width: 100px;
+    height: 110px;
+    float: left;
+    padding-top:10px;
+    padding-left:30px;
+}
+
+.questionName{
+    margin-left:150px;
+    padding-top:10px;
+    font-weight: bold;
+}
+
+.questionDescription{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.Team {
+    margin-left:150px;
+}
+
+.User {
+    margin-left:150px;
+}
+
+.create{
+    width:25%;
+    border-style: groove;
+    margin-top: 80px;
+    margin-right: 5%;
+    float: right;
+}
+
+.banner{
+    border-style: groove;
+}
+
+#newquestion{
+    padding-top: 150px;
+}
+
+.myQuestions{
+    width:25%;
+    border-style: groove;
+    margin-top: 80px;
+    margin-right: 5%;
+    float: right;
+}
+
+#questionList{
+    padding-top: 200px;
+}
