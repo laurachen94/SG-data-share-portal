@@ -12,10 +12,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by jeanliu on 3/22/17.
  */
 var core_1 = require('@angular/core');
+var question_service_1 = require('../../service/questions/question.service');
 var NewQuestionComponent = (function () {
-    function NewQuestionComponent() {
-        this.title = "Create New Question";
+    function NewQuestionComponent(questionService) {
+        var _this = this;
+        this.questionService = questionService;
+        this.questionService.getQuestions()
+            .subscribe(function (questions) {
+            _this.questions = questions;
+        });
     }
+    NewQuestionComponent.prototype.addQuestion = function (event) {
+        var _this = this;
+        event.preventDefault();
+        var newQuestion = {
+            Name: this.Name,
+            Description: this.Description,
+            Requester: this.Requester,
+            TimeLine: this.TimeLine,
+            Prize: this.Prize
+        };
+        this.questionService.addQuestion(newQuestion)
+            .subscribe(function (question) {
+            _this.questions.push(question);
+            _this.Name = '';
+            _this.Description = _this.Description,
+                _this.Requester = _this.Requester,
+                _this.TimeLine = _this.TimeLine,
+                _this.Prize = _this.Prize;
+        });
+    };
     NewQuestionComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -23,7 +49,7 @@ var NewQuestionComponent = (function () {
             templateUrl: './newquestion.component.html',
             styleUrls: ['../../stylesheet.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [question_service_1.QuestionService])
     ], NewQuestionComponent);
     return NewQuestionComponent;
 }());

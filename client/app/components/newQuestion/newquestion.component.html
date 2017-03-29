@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-</head>
-<body>
+<div class = "container">
   <div class="question-card" id="question-overview">
     <div class="card-title-bar">
       <div class="title-text">Question Overview</div>
     </div>
-    <form class = "new-question-info" (submit)="addQuestion($event)">
+    <form #NewQuestion = "ngForm" class = "new-question-info" (ngSubmit)="addQuestion($event)">
         <div class="form-group">
           <div id="summary-area">
             <div class="short-text-input">
@@ -101,5 +95,4 @@
       <button class="save-btn">Save</button>
     </div>
   </div>-->
-</body>
-</html>
+</div>
