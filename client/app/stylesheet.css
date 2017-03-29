@@ -100,7 +100,7 @@ ul{
       vertical-align: middle; }
 .question-card #summary-area {
     display: block;
-    height: 180px;
+    height: 230px;
     width: 780px;
     margin: 35px auto 0 auto; }
 .question-card #summary-area .short-text-input {
@@ -114,7 +114,7 @@ ul{
         border-bottom: 1px #979797 solid; }
 .question-card #options-area {
     display: block;
-    height: 156px;
+    height: 56px;
     width: 780px;
     margin: 24px auto 0 auto; }
 .question-card #options-area .selection-input {
